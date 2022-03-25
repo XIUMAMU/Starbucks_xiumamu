@@ -8,10 +8,10 @@ a{
 
 /* header */
 header{
-  background-color: brown;
+  background-color: #f6f5f0;
+  border: 1px solid #c8c8c8;
 }
 .inner{
-  background-color: rgb(218, 179, 255);
   width: 1100px;
   height: 120px;
   margin: 0 auto;
@@ -91,4 +91,76 @@ header .inner .sub-menu .search span{
 
 header .inner .sub-menu .focused span{
   opacity: 0;
+}
+header .inner .main-menu{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+header .inner .main-menu .item:hover{
+  
+}
+header .inner .main-menu .item .item__name{
+  padding: 10px 20px 34px 20px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+header .inner .main-menu .item:hover .item__name{
+  color: #669900;
+  background-color: #2c2a29;
+  border-radius: 5px 5px 0 0;
+}
+header .inner .main-menu .item .item__contents{
+  display: none;
+  position: fixed;
+  width: 100%;
+  left:0;
+  background-color: #2c2a29;
+}
+header .inner .main-menu .item:hover .item__contents{
+  display: block;
+}
+header .inner .main-menu .item .item__contents .contents__menu > ul{
+  padding: 20px 0;
+  height: auto;
+  display: flex;
+}
+header .inner .main-menu .item .item__contents .contents__menu > ul > li{
+  width: 220px;
+}
+header .inner .main-menu .item h4{
+  font-size: 14px;
+  padding: 3px 0px 12px;
+  color: #fff;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+header .inner .main-menu .item .item__contents .contents__menu > ul > li ul li{
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  font-family: 'Nanum Gothic', sans-serif;
+  cursor: pointer;
+
+  line-height: 1.6;
+}
+header .inner .main-menu .item .item__contents .contents__menu > ul > li ul li:hover{
+  color: #669900;
+}
+header .inner .main-menu .item .item__contents .contents__texture{
+  background-image: url(../assets/images/main_menu_pattern.jpg);
+  width: 100%;
+}
+header .inner .main-menu .item .item__contents .contents__texture>div{
+  height: auto;
+  font-size: 12px;
+  padding: 26px 0;
+}
+header .inner .main-menu .item .item__contents .contents__texture > div h4{
+  color: #999;
+}
+header .inner .main-menu .item .item__contents .contents__texture > div p {
+  color: #64a70b;
+  margin: 4px 0 14px;
 }
