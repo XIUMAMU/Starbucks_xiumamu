@@ -1,15 +1,11 @@
-/* common */
+/* COMMON */
+
 body{
   font-family: 'Nanum Gothic', sans-serif;
+  height: 5000px;
 }
 a{
   text-decoration: none;
-}
-
-/* header */
-header{
-  background-color: #f6f5f0;
-  border: 1px solid #c8c8c8;
 }
 .inner{
   width: 1100px;
@@ -17,6 +13,19 @@ header{
   margin: 0 auto;
   position: relative;
 }
+
+/* HEADER */
+
+header{
+  background-color: #f6f5f0;
+  border: 1px solid #c8c8c8;
+  position: fixed;
+  width: 100%;
+}
+header .inner{
+  z-index: 2;
+}
+/* Logo */
 header .inner .logo{
   height: 75px;
   position: absolute;
@@ -25,6 +34,7 @@ header .inner .logo{
   left: 0;
   margin: auto;
 }
+/* SubMenu */
 header .inner .sub-menu{
   display: flex;
   position: absolute;
@@ -88,18 +98,15 @@ header .inner .sub-menu .search span{
   margin: auto;
   transition: .4s;
 }
-
 header .inner .sub-menu .focused span{
   opacity: 0;
 }
+/* MainMenu */
 header .inner .main-menu{
   position: absolute;
   bottom: 0;
   right: 0;
   display: flex;
-}
-header .inner .main-menu .item:hover{
-  
 }
 header .inner .main-menu .item .item__name{
   padding: 10px 20px 34px 20px;
@@ -163,4 +170,18 @@ header .inner .main-menu .item .item__contents .contents__texture > div h4{
 header .inner .main-menu .item .item__contents .contents__texture > div p {
   color: #64a70b;
   margin: 4px 0 14px;
+}
+/* Badges */
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 16px;
+}
+header .badges .badge img{
+  display: block;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 4px, 4px, 10px, rgba(0, 0, 0, .15);
+  cursor: pointer;
 }
