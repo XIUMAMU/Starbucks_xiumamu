@@ -13,6 +13,56 @@ a{
   margin: 0 auto;
   position: relative;
 }
+/* btn */
+.btn{
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+  text-align: center;
+  transition: .4s;
+}
+.btn:hover{
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse{
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse:hover{
+  background-color: transparent;
+  color: #333;
+}
+.btn.btn--brown{
+  color: #592B18;
+  border-color: #592B18;
+}
+.btn.btn--brown:hover{
+  background-color: #592B18;
+  color: #fff;
+}
+.btn .btn--gold{
+  color: #D9AA8A;
+  border-color: #D9AA8A;
+}
+.btn.btn--gold:hover{
+  background-color: #D9AA8A;
+  color: #fff;
+}
+.btn.btn--white{
+  color: #fff;
+  border-color: #fff;
+}
+.btn.btn--white:hover{
+  color: #333;
+  background-color: #fff;
+}
 
 /* HEADER */
 
@@ -21,9 +71,6 @@ header{
   border: 1px solid #c8c8c8;
   position: fixed;
   width: 100%;
-}
-header .inner{
-  z-index: 2;
 }
 /* Logo */
 header .inner .logo{
@@ -107,6 +154,7 @@ header .inner .main-menu{
   bottom: 0;
   right: 0;
   display: flex;
+  z-index: 3;
 }
 header .inner .main-menu .item .item__name{
   padding: 10px 20px 34px 20px;
@@ -176,6 +224,7 @@ header .badges {
   position: absolute;
   top: 132px;
   right: 16px;
+  z-index: 2;
 }
 header .badges .badge img{
   display: block;
@@ -184,4 +233,56 @@ header .badges .badge img{
   overflow: hidden;
   box-shadow: 4px, 4px, 10px, rgba(0, 0, 0, .15);
   cursor: pointer;
+}
+
+/* SECTION */
+
+/* Visual */
+.visual{
+  background-image: url("../assets/images/visual_bg.jpg");
+  margin-top: 120px;
+  background-position: center;
+  background-color: yellowgreen;
+}
+.visual > .inner{
+  height: 646px;
+  position: relative;
+}
+.visual .inner .title{
+  position: absolute;
+  top: 88px;
+  left: -10px;
+}
+.visual .inner .title img{
+  
+}
+.visual .inner .title .btn{
+  position: absolute;
+  top: 259px;
+  left: 173px;
+}
+.visual .inner .cup1.image{
+  position: absolute;
+  bottom: 0;
+  right: -47px;
+}
+.visual .inner .cup1.text{
+  position: absolute;
+  top: 38px;
+  right: 171px;
+}
+.visual .inner .cup2.image{
+  position: absolute;
+  bottom: 0;
+  right: 162px;
+}
+.visual .inner .cup2.text{
+  position: absolute;
+  top: 321px;
+  right: 416px;
+}
+.visual .inner .spoon{
+  position: absolute;
+  bottom: 0;
+  right: 275px;
 }
