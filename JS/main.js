@@ -34,3 +34,9 @@ window.addEventListener('scroll', _.throttle(function(){
     })
   }
 },300));
+
+new Swiper('.notice-line .inner .inner__left .swiper', {
+  direction: 'vertical',
+  autoplay: true,
+  loop: true
+});
