@@ -35,6 +35,18 @@ window.addEventListener('scroll', _.throttle(function(){
   }
 },300));
 
+// Visual image Fade Animation
+
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+
+fadeEls.forEach(function(fadeEl, index){
+  gasp.to(fadeEl, 1, {
+    delay: (index + 1 ) * 0.7,
+    opacity: 1
+  })
+});
+
+// Swiper
 new Swiper('.notice-line .inner .inner__left .swiper', {
   direction: 'vertical',
   autoplay: true,

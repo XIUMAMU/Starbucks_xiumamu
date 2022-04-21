@@ -251,6 +251,9 @@ header .badges .badge img{
   height: 646px;
   position: relative;
 }
+.visual .fade-in{
+  opacity: 0;
+}
 .visual .title{
   position: absolute;
   top: 88px;
