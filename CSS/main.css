@@ -378,3 +378,79 @@ header .badges .badge img{
 }
 
 /* Promotion */
+.notice .promotion {
+  height: 693px;
+  background-color: #f6f5ef;
+  position: relative;
+}
+.notice .promotion .swiper{
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819px * 3 + 20px) / -2);
+}
+.notice .promotion .swiper .swiper-wrapper .swiper-slide{
+  opacity: 0.5;
+  transition: .1s;
+  position: relative;
+}
+.notice .promotion .swiper .swiper-wrapper .swiper-slide-active{
+  opacity: 1;
+}
+.notice .promotion .swiper .swiper-wrapper .swiper-slide .btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.notice .promotion .swiper-pagination{
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+.notice .promotion .swiper-pagination-bullet{
+  background-image: url("../assets/images/promotion_slide_pager.png");
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  outline: none;
+  background-color: transparent;
+}
+.notice .promotion .swiper-pagination-bullet:last-child{
+  margin-right: 0;
+}
+.notice .promotion .swiper-pagination-bullet-active{
+  background-image: url("../assets/images/promotion_slide_pager_on.png");
+}
+.notice .promotion .swiper-prev,
+.notice .promotion .swiper-next{
+  width: 42px;
+  height: 42px;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+.notice .promotion .swiper-prev{
+  left: 50%;
+  margin-left: -480px;  
+}
+.notice .promotion .swiper-next{
+  right: 50%;
+  margin-right: -480px;  
+}
+.notice .promotion .swiper-prev:hover,
+.notice .promotion .swiper-next:hover{
+  color: #fff;
+  background-color: #333;
+}

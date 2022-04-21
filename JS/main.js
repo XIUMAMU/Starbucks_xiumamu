@@ -46,8 +46,25 @@ fadeEls.forEach(function(fadeEl, index){
 });
 
 // Swiper
-const swiper = new Swiper('.notice-line .inner .inner__left .swiper', {
+new Swiper('.notice-line .inner .inner__left .swiper', {
   direction: 'vertical',
   autoplay: true,
   loop: true
+});
+new Swiper('.promotion .swiper', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination:{
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.swiper-prev',
+    nextEl: '.swiper-next'
+  }
 });
