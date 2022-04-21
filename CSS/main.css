@@ -291,6 +291,8 @@ header .badges .badge img{
 }
 
 /* Notice */
+
+/* Notice-Line */
 .notice .notice-line{
   position: relative;
 }
@@ -333,7 +335,6 @@ header .badges .badge img{
 }
 .notice .notice-line .inner .inner__left .swiper .swiper-wrapper .swiper-slide a{
   color: #f6f5ef;
-  font-size: 17px;
 }
 .notice .notice-line .inner .inner__left .swiper .swiper-wrapper .swiper-slide{
   height: 62px;
@@ -375,3 +376,5 @@ header .badges .badge img{
   font-size: 30px;
   color: #333;
 }
+
+/* Promotion */
