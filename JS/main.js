@@ -45,6 +45,23 @@ fadeEls.forEach(function(fadeEl, index){
   })
 });
 
+// Promotion toggle
+
+const promotionEl = document.querySelector('.promotion');
+const promotionToggleEl = document.querySelector('.toggle-promotion');
+
+let isHidePromotion = false;
+
+promotionToggleEl.addEventListener('click', function(){
+  isHidePromotion = !isHidePromotion
+
+  if (isHidePromotion) {
+    promotionEl.classList.add('hide')
+  }else{
+    promotionEl.classList.remove('hide')
+  }
+});
+
 // Swiper
 new Swiper('.notice-line .inner .inner__left .swiper', {
   direction: 'vertical',
@@ -68,3 +85,24 @@ new Swiper('.promotion .swiper', {
     nextEl: '.swiper-next'
   }
 });
+
+
+// Floating Image Animation
+
+function random(min, max) {
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+}
+
+function floatingObject(selector, delay, size) {
+  gsap.to(selector, random(1.5, 2.5), {
+    y : size,
+    repeat : -1,
+    yoyo : true,
+    ease: Power2.easeInOut,
+    delay : random(0, delay)
+  });
+} ;
+
+floatingObject('.floating1', 1, 15);
+floatingObject('.floating2', .5, 15);
+floatingObject('.floating3', 1.5, 20);

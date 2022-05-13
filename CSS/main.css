@@ -46,7 +46,7 @@ a{
   background-color: #592B18;
   color: #fff;
 }
-.btn .btn--gold{
+.btn.btn--gold{
   color: #D9AA8A;
   border-color: #D9AA8A;
 }
@@ -382,6 +382,11 @@ header .badges .badge img{
   height: 693px;
   background-color: #f6f5ef;
   position: relative;
+  transition: height 0.4s;
+  overflow: hidden;
+}
+.notice .promotion.hide{
+  height: 0;
 }
 .notice .promotion .swiper{
   width: calc(819px * 3 + 20px);
@@ -410,6 +415,7 @@ header .badges .badge img{
   bottom: 40px;
   left: 0;
   right: 0;
+  z-index: 0;
 }
 .notice .promotion .swiper-pagination-bullet{
   background-image: url("../assets/images/promotion_slide_pager.png");
@@ -453,4 +459,186 @@ header .badges .badge img{
 .notice .promotion .swiper-next:hover{
   color: #fff;
   background-color: #333;
+}
+
+/* Rewards */
+.rewards{
+  position: relative;
+}
+.rewards .inner{
+  height: 241px;
+  background-image: url(../assets/images/rewards.jpg);
+}
+.rewards .bg-left{
+  height: 100%;
+  width: 50%;
+  background-color: #272727;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rewards .bg-right{
+  height: 100%;
+  width: 50%;
+  background-color: #d5c798;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rewards .inner .btn-group{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+  width: 250px;
+}
+.rewards .inner .btn-group .sign-in{
+  width: 110px;
+  cursor: pointer;
+}
+.rewards .inner .btn-group .sign-up{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.rewards .inner .btn-group .gift{
+  margin-top: 10px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+
+/* Youtube */
+.youtube{
+  background-color: #333;
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+.youtube #player{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.youtube .youtube__cover{
+  background-image: url(../assets/images/video_cover_pattern.png);
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.youtube .youtube__area::before{
+  content: " ";
+  padding-top: 56.25%;
+  display: block;
+  width: 100%;
+  height: 0;
+}
+.youtube .youtube__area{
+  position: absolute;
+  width: 1920px;
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  top: 50%;
+  margin-top: calc(1920px * 9 / 16 / -2);
+}
+.youtube .inner{
+  height: 700px;
+}
+.youtube .inner .floating1{
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.youtube .inner .floating2{
+  position: absolute;
+  top: 350px;
+  left: 150px;
+}
+.youtube .inner .floating3{
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+}
+
+
+/* Season Product */
+
+.season-product{
+  background-image: url("../assets/images/season_product_bg.jpg");
+}
+.season-product .inner{
+  height: 400px;
+}
+.season-product .inner .text-group{
+  position: absolute;
+  top: 110px;
+  right: 100px;
+  width: 488px;
+}
+.season-product .inner .text-group .title{
+  margin-bottom: 10px;
+}
+.season-product .inner .text-group .desc{
+  margin-bottom: 15px;
+}
+.season-product .inner .floating3{
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
+
+
+/* Reserve Coffee */
+
+.reserve-coffee{
+  background-image: url("../assets/images/reserve_bg.jpg");
+}
+.reserve-coffee .inner{
+  height: 400px;
+}
+.reserve-coffee .inner .reserve-logo{
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+.reserve-coffee .inner .text-group {
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+.reserve-coffee .inner .product{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/* Pick Your Favorite */
+.pick-your-favorite{
+  background-image: url("../assets/images/favorite_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.pick-your-favorite .inner{
+  padding: 110px 0;
+}
+.pick-your-favorite .inner .text-group{
+  width: 362px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: 100px;
+}
+.pick-your-favorite .inner .text-group .title{
+  margin-bottom: 40px;
+}
+.pick-your-favorite .inner .text-group .desc{
+  margin-bottom: 40px;
 }
